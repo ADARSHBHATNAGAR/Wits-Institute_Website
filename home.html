@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> WITS Institute </title>
+	<style>
+		*{
+			margin: 0px;
+			padding: 0px;
+			box-sizing: border-box;
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			display: flex;
+			align-items: center;
+			background-color: aqua;
+			width: 100%;
+			height: 80px;
+			justify-content: space-between;
+		}
+
+		.logo-container {
+			display: flex;
+			align-items: center;
+			padding-left: 4px;
+			padding-right: 4px;
+		}
+
+		.logo {
+			width: 70px;
+			height: 70px;
+			border-radius: 35px;
+			/* Kisi ko bhi circle shape dene ke liye */
+		}
+
+		ul {
+			width: 800px;
+			display: flex;
+			/* background-color: red; */
+			justify-content: space-evenly;
+		}
+
+		li {
+			color: black;
+			list-style: none;
+			font-size: 1.7rem;
+		}
+
+		a {
+			text-decoration: none;
+			/* Iska prayog hyperlink ki neeche waali line ko hatane me kiya jaata hai  */
+		}
+		.section-1{
+			background-image: url(./section-1-bg.jpg);
+			height: 500px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		h1{
+			font-size: 72px;
+			text-align: center;
+			color: whitesmoke;
+		}
+		.section-2{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-top: 10px;
+		}
+		.card-container{
+			display: flex;
+			/* background-color: rgb(235, 116, 116); */
+			width: 100%;
+			padding-top: 10px;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+		}
+		.card{
+			width: 300px;
+			height: 300px;
+			/* border: 2px solid black; */
+			 border-radius: 50px;
+			
+		}
+		.heading-cards{
+			font-size: 1.7rem;
+		}
+		#card-1{
+			background-image: url(./card-1-data-engineering.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#card-2{
+			background-image: url(./card-2-emt.png);
+			background-size: contain;
+		}
+		#card-3{
+			background-image: url(./card-3-o-level.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#card-4{
+			background-image: url(./card-4-neilit.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#card-5{
+			background-image: url(./card-5-pmkvy.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		#card-6{
+			background-image: url(./card-6-upsdm.jpg);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.footer{
+			background-color: rgb(29, 27, 27);
+			width: 100%;
+			color: white;
+			height: 200px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: larger;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<div class="logo-container">
+			<img class="logo" src="wits_logo.jpg" alt="WITS Logo">
+			<h2> WITS Institute </h2>
+		</div>
+		<div class="navbar">
+			<ul>
+				<a href="C:\Users\dell\Desktop\HTML TUTORIAL\CSS Tutorial\WITS Institue Website\home.html">
+					<li> Home </li>
+				</a>
+				<a href="C:\Users\dell\Desktop\HTML TUTORIAL\CSS Tutorial\WITS Institue Website\about.html">
+					<li> About </li>
+				</a>
+				<a href="C:\Users\dell\Desktop\HTML TUTORIAL\CSS Tutorial\WITS Institue Website\courses_offered.html">
+					<li> Courses Offered </li>
+				</a>
+				<a href="#">
+					<li> Admissions </li>
+				</a>
+				<a href="C:\Users\dell\Desktop\HTML TUTORIAL\CSS Tutorial\WITS Institue Website\contact.html">
+					<li> Contact </li>
+				</a>
+			</ul>
+		</div>
+	</div>
+	<section class="section-1">
+		<h1> Welcome to WITS Institute </h1>
+	</section>
+	<section class="section-2">
+		<div class="heading-cards">
+		<h2>Trending Courses</h2> </div>
+		<div class="card-container">
+			<div id="card-1" class="card"></div> <!-- Div ek block element hota hai-->
+			<div id="card-2" class="card"></div>
+			<div id="card-3" class="card"></div>
+		</div>
+	</section>
+	<section class="section-2">
+		<div class="heading-cards">
+		<h2>Our Affiliations</h2> </div>
+		<div class="card-container">
+			<div id="card-4" class="card"></div> <!-- Div ek block element hota hai-->
+			<div id="card-5" class="card"></div>
+			<div id="card-6" class="card"></div>
+		</div>
+	</section>
+	<div class="footer">
+		Copyright &copy | All Rights Reserved | WITS Institute
+	</div>
+</body>
+
+</html>
